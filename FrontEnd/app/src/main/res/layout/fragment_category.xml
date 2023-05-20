@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/technology_cardview_category"
+        android:layout_width="110dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="@dimen/default_gap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineCategory"
+        android:backgroundTint="@color/cardviewcolor"
+        app:cardCornerRadius="@dimen/medium_gap"
+        app:cardMaxElevation="@dimen/medium_gap"
+        >
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="118dp"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/category_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:contentDescription="@string/technology_contentdescription_cardview"
+                android:src="@drawable/technology" />
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="@dimen/default_gap"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/category_text_Cardview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/medium_gap"
+                    android:layout_marginEnd="@dimen/medium_gap"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="@dimen/default_gap"
+                    android:text="@string/technology_text_cardview"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medium_text_gap" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tools_cardview_category"
+        android:layout_width="110dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="@dimen/big_gap"
+        android:backgroundTint="@color/cardviewcolor"
+        app:cardCornerRadius="@dimen/medium_gap"
+        app:cardMaxElevation="@dimen/medium_gap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/technology_cardview_category">
+
+        <LinearLayout
+            android:layout_width="104dp"
+            android:layout_height="130dp"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/tools_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:contentDescription="@string/tools_contentdescription_cardview"
+                android:src="@drawable/tools"
+                android:paddingTop="@dimen/default_gap"
+                android:paddingStart="@dimen/default_gap"
+                />
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_gap"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tools_text_Cardview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/medium_gap"
+                    android:layout_marginEnd="@dimen/medium_gap"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/tools_Cardview_category"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medium_text_gap"
+                    android:paddingStart="@dimen/big_gap"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="110dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="@dimen/big_gap"
+        android:backgroundTint="@color/cardviewcolor"
+        app:cardCornerRadius="@dimen/medium_gap"
+        app:cardMaxElevation="@dimen/medium_gap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tools_cardview_category">
+
+        <LinearLayout
+            android:layout_width="104dp"
+            android:layout_height="118dp"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/livingroom_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:src="@drawable/livingroom"
+                android:contentDescription="@string/livingroom_contentdescription_category"
+                android:paddingTop="@dimen/default_gap"
+                android:paddingStart="@dimen/default_gap"
+                />
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_gap"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/livingroom_text_Cardview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/medium_gap"
+                    android:layout_marginEnd="@dimen/medium_gap"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/living_room_text_cardview"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medium_text_gap"
+                    android:paddingStart="26dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
