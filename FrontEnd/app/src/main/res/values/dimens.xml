@@ -6,7 +6,8 @@
     <dimen name="small_gap">4dp</dimen>
 
     <!-- logo dimne -->
-    <dimen name="logo_height_dimen_sign_up">100dp</dimen>
+    <dimen name="logo_height_dimen_sign_up">55dp</dimen>
+    <dimen name="logo_width_dimen_sign_up">100dp</dimen>
     <dimen name="logo_width_dimen">125dp</dimen>
     <dimen name="logo_height_dimen">125dp</dimen>
 
