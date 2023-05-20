@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">Exchange</string>
+    <string name="app_name">ExchangeAlone</string>
+    <string name="username_login_textfield_text">USERNAME</string>
+    <string name="password_login_textfield_text">PASSWORD</string>
+    <string name="login_logo_content_description">Exchange logo</string>
+    <string name="login_button_text">LOGIN</string>
+    <string name="sign_up_button_text">SIGN UP</string>
+    <string name="user_textfield_sign_up">USERNAME</string>
+    <string name="name_textfield_sign_up">NAME</string>
+    <string name="lastname_textfield_sign_up">LASTNAME</string>
+    <string name="email_textfield_sign_up">EMAIL</string>
+    <string name="phonenumber_textfield_sign_up">PHONENUMBER</string>
+    <string name="confirm_passweord_textfield_login">CONFIRM PASSWORD</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="technology_text_cardview">technology</string>
+    <string name="tools_Cardview_category">tools</string>
+    <string name="living_room_text_cardview">home</string>
+    <string name="livingroom_contentdescription_category">home category image</string>
+    <string name="tools_contentdescription_cardview">tools image</string>
+    <string name="technology_contentdescription_cardview">technology</string>
 </resources>

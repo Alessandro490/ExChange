@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+    <ImageView
+        android:id="@+id/login_image_view"
+        android:layout_width="@dimen/logo_width_dimen"
+        android:layout_height="@dimen/logo_height_dimen"
+        android:contentDescription="@string/login_logo_content_description"
+        android:layout_marginTop="@dimen/default_gap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline_login"
+        app:srcCompat="@drawable/exchange_logo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextFieldusername"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_gap"
+        android:layout_marginTop="@dimen/big_gap"
+        android:layout_marginEnd="@dimen/default_gap"
+        android:hint="@string/username_login_textfield_text"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeErrorColor="@color/red"
+        app:boxCornerRadiusBottomEnd="@dimen/medium_gap"
+        app:boxCornerRadiusBottomStart="@dimen/medium_gap"
+        app:boxCornerRadiusTopEnd="@dimen/medium_gap"
+        app:boxCornerRadiusTopStart="@dimen/medium_gap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_image_view">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_username_textfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_gap"
+        android:layout_marginTop="@dimen/big_gap"
+        android:layout_marginEnd="@dimen/default_gap"
+        android:hint="@string/password_login_textfield_text"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:errorEnabled="true"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeErrorColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outlinedTextFieldusername"
+        app:boxCornerRadiusTopStart="@dimen/medium_gap"
+        app:boxCornerRadiusTopEnd="@dimen/medium_gap"
+        app:boxCornerRadiusBottomStart="@dimen/medium_gap"
+        app:boxCornerRadiusBottomEnd="@dimen/medium_gap"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_password_textfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <Button
+        android:id="@+id/login_button_action_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_text_gap"
+        android:backgroundTint="@color/aqua"
+        android:text="@string/login_button_text"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/outlinedTextField"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/outlinedTextField"
+        app:layout_constraintTop_toBottomOf="@+id/outlinedTextField" />
+
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:backgroundTint="@color/aqua"
+        android:text="@string/sign_up_button_text"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/login_button_action_login"
+        app:layout_constraintStart_toStartOf="@+id/login_button_action_login"
+        app:layout_constraintTop_toBottomOf="@+id/login_button_action_login" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

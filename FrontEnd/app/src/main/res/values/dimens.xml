@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_gap">8dp</dimen>
+    <dimen name="big_gap">32dp</dimen>
+    <dimen name="medium_gap">16dp</dimen>
+    <dimen name="small_gap">4dp</dimen>
+
+    <!-- logo dimne -->
+    <dimen name="logo_height_dimen_sign_up">100dp</dimen>
+    <dimen name="logo_width_dimen">125dp</dimen>
+    <dimen name="logo_height_dimen">125dp</dimen>
+
+    <!-- cardview dimen -->
+    <dimen name="cardview_height">130dp</dimen>
+    <dimen name="cardview_width">330dp</dimen>
+
+    <!-- text size -->
+    <dimen name="medium_text_gap">16sp</dimen>
+</resources>
