@@ -5,5 +5,6 @@
     <color name="red">#F30A0A</color>
     <color name="gray">#C5C4C4</color>
     <color name="aqua">#03A9F4</color>
-    <color name="cardviewcolor">#10B4F4</color>
+    <color name="cardviewcolor">#8010B4F4</color>
+    <color name="forgotpassword">#3F51B5</color>
 </resources>

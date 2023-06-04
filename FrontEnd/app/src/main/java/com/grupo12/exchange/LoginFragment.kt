@@ -6,10 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.navigation.findNavController
 
 class LoginFragment : Fragment() {
 
+    //Declarate variables
+    private lateinit var forgotPassword: TextView
     private lateinit var actionToSignup: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,9 +31,14 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         actionToSignup = view.findViewById(R.id.sign_up_button)
+        forgotPassword = view.findViewById(R.id.forgot_password)
 
         actionToSignup.setOnClickListener{
             it.findNavController().navigate(R.id.action_loginFragment_to_signupFragment)
+        }
+
+        forgotPassword.setOnClickListener{
+            it.findNavController().navigate(R.id.action_loginFragment_to_forgotPasswordFragment)
         }
     }
 
