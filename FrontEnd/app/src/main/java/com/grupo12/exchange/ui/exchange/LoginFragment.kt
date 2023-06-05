@@ -1,4 +1,4 @@
-package com.grupo12.exchange
+package com.grupo12.exchange.ui.exchange
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.navigation.findNavController
+import com.grupo12.exchange.R
 
 class LoginFragment : Fragment() {
 
