@@ -9,7 +9,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.grupo12.exchange.ui.exchange.LoginFragment"
+        android:name="com.grupo12.exchange.ui.exchange.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -21,12 +21,12 @@
     </fragment>
     <fragment
         android:id="@+id/signupFragment"
-        android:name="com.grupo12.exchange.ui.exchange.SignupFragment"
+        android:name="com.grupo12.exchange.ui.exchange.login.SignupFragment"
         android:label="fragment_signup"
         tools:layout="@layout/fragment_signup" />
     <fragment
         android:id="@+id/forgotPasswordFragment"
-        android:name="com.grupo12.exchange.ui.exchange.ForgotPasswordFragment"
+        android:name="com.grupo12.exchange.ui.exchange.login.ForgotPasswordFragment"
         android:label="fragment_forgot_password"
         tools:layout="@layout/fragment_forgot_password" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.grupo12.exchange.ui.exchange
+package com.grupo12.exchange.ui.exchange.login
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
