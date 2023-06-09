@@ -15,9 +15,10 @@
         <action
             android:id="@+id/action_loginFragment_to_signupFragment"
             app:destination="@id/signupFragment" />
+
         <action
-            android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
-            app:destination="@id/forgotPasswordFragment" />
+            android:id="@+id/action_loginFragment_to_requiredEmailPasswordFragment2"
+            app:destination="@id/requiredEmailPasswordFragment2" />
     </fragment>
     <fragment
         android:id="@+id/signupFragment"
@@ -29,4 +30,22 @@
         android:name="com.grupo12.exchange.ui.exchange.login.ForgotPasswordFragment"
         android:label="fragment_forgot_password"
         tools:layout="@layout/fragment_forgot_password" />
+    <fragment
+        android:id="@+id/requiredEmailPasswordFragment2"
+        android:name="com.grupo12.exchange.ui.exchange.login.RequiredEmailPasswordFragment"
+        android:label="fragment_required_email_password"
+        tools:layout="@layout/fragment_required_email_password" >
+        <action
+            android:id="@+id/action_requiredEmailPasswordFragment2_to_validateEmailCodeFragment"
+            app:destination="@id/validateEmailCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/validateEmailCodeFragment"
+        android:name="com.grupo12.exchange.ui.exchange.login.ValidateEmailCodeFragment"
+        android:label="fragment_validate_email_code"
+        tools:layout="@layout/fragment_validate_email_code" >
+        <action
+            android:id="@+id/action_validateEmailCodeFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+    </fragment>
 </navigation>

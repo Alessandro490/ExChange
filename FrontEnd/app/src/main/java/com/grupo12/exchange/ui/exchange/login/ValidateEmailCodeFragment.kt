@@ -6,15 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.TextView
 import androidx.navigation.findNavController
 import com.grupo12.exchange.R
 
-class LoginFragment : Fragment() {
+class ValidateEmailCodeFragment : Fragment() {
 
     //Declarate variables
-    private lateinit var forgotPassword: TextView
-    private lateinit var actionToSignup: Button
+    private lateinit var validateCode: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,21 +23,17 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_login, container, false)
+        return inflater.inflate(R.layout.fragment_validate_email_code, container, false)
     }
 
+    //Navigation Settings
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        actionToSignup = view.findViewById(R.id.sign_up_button)
-        forgotPassword = view.findViewById(R.id.forgot_password)
+        validateCode = view.findViewById(R.id.validate_email_code_button)
 
-        actionToSignup.setOnClickListener{
-            it.findNavController().navigate(R.id.action_loginFragment_to_signupFragment)
-        }
-
-        forgotPassword.setOnClickListener{
-            it.findNavController().navigate(R.id.action_loginFragment_to_requiredEmailPasswordFragment2)
+        validateCode.setOnClickListener{
+            it.findNavController().navigate(R.id.action_validateEmailCodeFragment_to_forgotPasswordFragment)
         }
     }
 
