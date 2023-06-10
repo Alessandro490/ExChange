@@ -1,29 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ForgotPasswordFragment">
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelinesignup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.12" />
+    android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/sign_up_image_view"
-        android:layout_width="@dimen/logo_width_dimen"
-        android:layout_height="@dimen/logo_height_dimen"
-        android:layout_marginTop="@dimen/default_gap"
+        android:id="@+id/sign_up_image_view2"
+        android:layout_width="@dimen/logo_width_dimen_sign_up"
+        android:layout_height="@dimen/logo_height_dimen_sign_up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guidelinesignup"
         app:srcCompat="@drawable/exchange_logo" />
-
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/id_text"
@@ -31,9 +20,41 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/default_gap"
-        android:layout_marginTop="@dimen/medium_text_gap"
         android:layout_marginEnd="@dimen/default_gap"
-        android:hint="@string/user_textfield_sign_up"
+        android:layout_marginBottom="528dp"
+        android:hint="Nombre"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        app:boxCornerRadiusBottomEnd="@dimen/medium_gap"
+        app:boxCornerRadiusBottomStart="@dimen/medium_gap"
+        app:boxCornerRadiusTopEnd="@dimen/medium_gap"
+        app:boxCornerRadiusTopStart="@dimen/medium_gap"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeErrorColor="@color/red"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_image_view2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/id_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/id_descripcion"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_gap"
+        android:layout_marginEnd="@dimen/default_gap"
+        android:hint="Descripcion"
         android:textColor="@color/black"
         android:textColorHint="@color/gray"
         app:boxCornerRadiusBottomEnd="@dimen/medium_gap"
@@ -48,87 +69,66 @@
         app:hintTextColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sign_up_image_view">
+        app:layout_constraintTop_toBottomOf="@+id/id_text">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/id_name"
+            android:id="@+id/id_desc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/outlinedTextFieldpassword"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/default_gap"
-        android:layout_marginTop="@dimen/small_gap"
-        android:layout_marginEnd="@dimen/default_gap"
-        android:hint="@string/password_login_textfield_text"
-        android:textColor="@color/black"
-        android:textColorHint="@color/gray"
-        app:boxCornerRadiusBottomEnd="@dimen/medium_gap"
-        app:boxCornerRadiusBottomStart="@dimen/medium_gap"
-        app:boxCornerRadiusTopEnd="@dimen/medium_gap"
-        app:boxCornerRadiusTopStart="@dimen/medium_gap"
-        app:boxStrokeColor="@color/black"
-        app:boxStrokeErrorColor="@color/red"
-        app:errorEnabled="true"
-        app:hintTextColor="@color/black"
+    <Spinner
+        android:id="@+id/id_categoria"
+
+        android:layout_width="388dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_text">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/sign_up_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/outlinedTextFieldconfirmpassword"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/default_gap"
-        android:layout_marginTop="@dimen/small_gap"
-        android:layout_marginEnd="@dimen/default_gap"
-        android:hint="@string/confirm_passweord_textfield_login"
-        android:textColor="@color/black"
-        android:textColorHint="@color/gray"
-        app:boxCornerRadiusBottomEnd="@dimen/medium_gap"
-        app:boxCornerRadiusBottomStart="@dimen/medium_gap"
-        app:boxCornerRadiusTopEnd="@dimen/medium_gap"
-        app:boxCornerRadiusTopStart="@dimen/medium_gap"
-        app:boxStrokeColor="@color/black"
-        app:boxStrokeErrorColor="@color/red"
-        app:errorEnabled="true"
-        app:hintTextColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/outlinedTextFieldpassword">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/sign_up_confirm_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword" />
-
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toBottomOf="@+id/id_descripcion" />
 
     <Button
-        android:id="@+id/sing_up_button"
-        android:layout_width="0dp"
+        android:id="@+id/id_archivos"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/medium_text_gap"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="116dp"
+        android:backgroundTint="@color/gray"
+        android:text="Seleccionar archivos"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_categoria" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="382dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_archivos"
+        app:srcCompat="@drawable/cargar_archivos" />
+
+    <Button
+        android:id="@+id/id_publicar"
+        android:layout_width="203dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="104dp"
         android:backgroundTint="@color/aqua"
-        android:text="@string/sign_up_button_text"
+        android:text="PUBLICAR"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/outlinedTextFieldconfirmpassword"
-        app:layout_constraintStart_toStartOf="@+id/outlinedTextFieldconfirmpassword"
-        app:layout_constraintTop_toBottomOf="@+id/outlinedTextFieldconfirmpassword" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
