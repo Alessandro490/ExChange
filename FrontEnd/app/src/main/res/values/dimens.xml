@@ -17,4 +17,6 @@
 
     <!-- text size -->
     <dimen name="medium_text_gap">16sp</dimen>
+    <dimen name="category_cardview_width">150dp</dimen>
+    <dimen name="category_cardview_height">150dp</dimen>
 </resources>

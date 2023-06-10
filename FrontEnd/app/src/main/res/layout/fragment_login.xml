@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginFragment">
+    tools:context=".ui.exchange.login.LoginFragment">
 
     <ImageView
         android:id="@+id/login_image_view"
@@ -91,18 +91,33 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.08" />
 
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_gap"
+        android:layout_marginTop="@dimen/default_gap"
+        android:layout_marginEnd="@dimen/default_gap"
+        android:text="@string/forgot_password_text"
+        android:textColor="@color/forgotpassword"
+        android:textStyle="bold"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outlinedTextField" />
+
     <Button
         android:id="@+id/login_button_action_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/medium_text_gap"
+        android:layout_marginTop="@dimen/medium_gap"
         android:backgroundTint="@color/aqua"
         android:text="@string/login_button_text"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/outlinedTextField"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/outlinedTextField"
-        app:layout_constraintTop_toBottomOf="@+id/outlinedTextField" />
+        app:layout_constraintTop_toBottomOf="@+id/forgot_password" />
 
     <Button
         android:id="@+id/sign_up_button"
@@ -116,5 +131,13 @@
         app:layout_constraintStart_toStartOf="@+id/login_button_action_login"
         app:layout_constraintTop_toBottomOf="@+id/login_button_action_login" />
 
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_gap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

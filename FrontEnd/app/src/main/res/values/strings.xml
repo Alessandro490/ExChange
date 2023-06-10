@@ -3,19 +3,34 @@
     <string name="username_login_textfield_text">USERNAME</string>
     <string name="password_login_textfield_text">PASSWORD</string>
     <string name="login_logo_content_description">Exchange logo</string>
-    <string name="login_button_text">LOGIN</string>
-    <string name="sign_up_button_text">SIGN UP</string>
+    <string name="login_button_text">Ingresar</string>
+    <string name="sign_up_button_text">Registrarse</string>
     <string name="user_textfield_sign_up">USERNAME</string>
     <string name="name_textfield_sign_up">NAME</string>
     <string name="lastname_textfield_sign_up">LASTNAME</string>
     <string name="email_textfield_sign_up">EMAIL</string>
     <string name="phonenumber_textfield_sign_up">PHONENUMBER</string>
     <string name="confirm_passweord_textfield_login">CONFIRM PASSWORD</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="technology_text_cardview">technology</string>
-    <string name="tools_Cardview_category">tools</string>
-    <string name="living_room_text_cardview">home</string>
+    <string name="technology_text_cardview">TECNOLOGIA</string>
+    <string name="tools_Cardview_category">HERRAMIENTAS</string>
+    <string name="living_room_text_cardview">HOGAR</string>
     <string name="livingroom_contentdescription_category">home category image</string>
     <string name="tools_contentdescription_cardview">tools image</string>
     <string name="technology_contentdescription_cardview">technology</string>
+    <string name="forgot_password_text">Forgot password</string>
+    <string name="add_text">Agregar</string>
+    <string name="search_text">Buscar</string>
+    <string name="category_text">Categorias</string>
+    <string name="start_text">Inicio</string>
+    <string name="profile_text">Perfil</string>
+    <string name="description_text">Bicicleta de montaña con poco uso, busco intercambiarla
+                                    por un teléfono o una tablet.</string>
+    <string name="product_name_text">Bicicleta de Montaña</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="validate_button_text">Verificar</string>
+    <string name="example_gmail_text">example@gmail.com</string>
+    <string name="validate_email_description_text">Favor ingresar su direccion de correo electronico para verificar que es usted</string>
+    <string name="validate_code_text">Favor ingrese el codigo que se envio a su direccion de correo electronico</string>
+    <string name="validate_email_code_text">Code</string>
 </resources>
