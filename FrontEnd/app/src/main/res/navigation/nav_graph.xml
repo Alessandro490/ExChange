@@ -48,4 +48,26 @@
             android:id="@+id/action_validateEmailCodeFragment_to_forgotPasswordFragment"
             app:destination="@id/forgotPasswordFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/feedFragment2"
+        android:name="com.grupo12.exchange.ui.exchange.feed.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.grupo12.exchange.ui.exchange.category.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.grupo12.exchange.ui.exchange.feed.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_feedFragment2"
+            app:destination="@id/feedFragment2" />
+        <action
+            android:id="@+id/action_menuFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
 </navigation>
