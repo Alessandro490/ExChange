@@ -15,6 +15,7 @@ class LoginFragment : Fragment() {
     //Declarate variables
     private lateinit var forgotPassword: TextView
     private lateinit var actionToSignup: Button
+    private lateinit var actionToSignin:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +34,7 @@ class LoginFragment : Fragment() {
 
         actionToSignup = view.findViewById(R.id.sign_up_button)
         forgotPassword = view.findViewById(R.id.forgot_password)
+        actionToSignin = view.findViewById(R.id.login_button_action_login)
 
         actionToSignup.setOnClickListener{
             it.findNavController().navigate(R.id.action_loginFragment_to_signupFragment)
@@ -40,6 +42,9 @@ class LoginFragment : Fragment() {
 
         forgotPassword.setOnClickListener{
             it.findNavController().navigate(R.id.action_loginFragment_to_requiredEmailPasswordFragment2)
+        }
+        actionToSignin.setOnClickListener{
+            it.findNavController().navigate(R.id.action_loginFragment_to_feedFragment2)
         }
     }
 

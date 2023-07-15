@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_loginFragment_to_requiredEmailPasswordFragment2"
             app:destination="@id/requiredEmailPasswordFragment2" />
+        <action
+            android:id="@+id/action_loginFragment_to_feedFragment2"
+            app:destination="@id/feedFragment2" />
     </fragment>
     <fragment
         android:id="@+id/signupFragment"
